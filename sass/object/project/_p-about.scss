@@ -1,0 +1,160 @@
+/* ABOUT ME */
+.p-about{
+  text-align: center;
+
+  @include media(pc-tab){
+    position: relative;
+  }
+
+  &__title{
+    color: $base_color;
+    display: inline-block;
+    font-size: 3rem;
+    position: relative;
+  }
+
+  &__wrap{
+    color: $base_color;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top:48px;
+    width: 100%;
+  }
+
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:nth-child(2){
+      margin-bottom: 16px;
+      margin-top: 20px;
+    }
+
+    @include media(pc-tab){
+      align-items: center;
+      border: none;
+      flex-wrap: nowrap;
+      width: 100%;
+
+      &:first-child{
+        margin: 0 auto;
+        text-align: left;
+
+        & .p-about__list{
+          display: inline-block;
+          font-size: 2rem;
+          padding: 8px;
+        }
+      }
+
+      &:last-child{
+        margin: 48px auto 0 auto;
+        text-align:start;
+
+        & .p-about__text{
+          display: inline-block;
+          font-size: 2rem;
+          padding: 8px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  @include media(pc-tab){
+    &__pc{
+      color: $base_color;
+      white-space: nowrap;
+    }
+  }
+
+  &__pro{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include media(pc-tab){
+      .p-about &{
+        width: 30%;
+      }
+
+    }
+  }
+
+  &__profile{
+    font-size: 2rem;
+
+    @include media(pc-tab){
+      .p-about &--pc{
+        font-size: 3.6rem;
+        text-align: left;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__intro{
+    font-size: 1.6rem;
+    text-align: center;
+
+    @include media(pc-tab){
+      .p-about &--pc{
+        display: block;
+        font-size: 3.6rem;
+        width: 30%;
+      }
+    }
+  }
+
+  &__list{
+    display: inline-block;
+    line-height: 1.1;
+    padding-top: 10px;
+    text-align: left;
+    width: 23rem;
+
+    @include media(pc-tab){
+      text-align: left;
+      white-space: nowrap;
+      width: 70%;
+    }
+  }
+
+  &__box{
+    width: 100%;
+
+    @include media(pc-tab){
+      width: 70%;
+    }
+  }
+
+  &__text{
+    display: block;
+    line-height: 1.1;
+    padding-top: 10px;
+    text-align: left;
+    width: 100%;
+
+    @include media(pc-tab){
+    }
+  }
+
+  &__item{
+    display: inline-block;
+    text-align: left;
+  }
+
+  & .is-active--about{
+    display: block;
+    transform: translateX(0);
+
+    @include media(pc-tab){
+      display: flex;
+    }
+  }
+
+}
+
