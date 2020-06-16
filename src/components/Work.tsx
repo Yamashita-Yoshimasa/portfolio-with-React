@@ -29,8 +29,10 @@ const Work: FC<{}> = () => {
               <Modal.Content>
                 <Modal.Description>
                   <Header>Default Profile Image</Header>
-                  <Tab panes={item.DeviceTab} />
-                  <Tab panes={item.IntroTab} />
+                  <div className="c-modal -flex">
+                    <Tab panes={item.DeviceTab} className="c-modal__item" />
+                    <Tab panes={item.IntroTab} className="c-modal__item" />
+                  </div>
                 </Modal.Description>
               </Modal.Content>
             </Modal>
