@@ -24,6 +24,7 @@ interface Tab {
 }
 interface WorkItem {
   id: number;
+  name: string;
   image: string;
   alt: string;
   DeviceTab?: Tab[];
@@ -37,6 +38,7 @@ export const WorkData: WorkList = {
   List: [
     {
       id: 1,
+      name: 'Lencer',
       image: LencerTopImage,
       alt: '担当した案件の画像',
       DeviceTab: [
@@ -93,6 +95,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 2,
+      name: 'Portfolio',
       image: PortfolioTopImage,
       alt: '作成したポートフォリオのトップページ画像',
       DeviceTab: [
@@ -160,6 +163,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 3,
+      name: '現役フリーランスに相談しよう！',
       image: IventTopImage,
       alt: '主催したイベントのホームページ画像',
       DeviceTab: [
@@ -229,6 +233,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 4,
+      name: 'ウサギとかめ',
       image: TurtleRabbitTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -301,6 +306,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 5,
+      name: 'Vote App',
       image: VoteAppTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -380,6 +386,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 6,
+      name: 'COVID-19 Compensation',
       image: COVIDTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -416,8 +423,8 @@ export const WorkData: WorkList = {
               新型コロナウイルスの影響でたくさんの被害が出ており、その際にTwitterなどで日本はマスク二枚だけしか支援していないなど誤った情報が広がっていました。日本もたくさんの支援をしていると多くの人に知ってもらいたいと思いこのWebサイトを作成しました。今後も新しい助成金などを随時追加していく予定です。
               <br />
               GAE:
-              <a href="https://yamabaku-vote-app.appspot.com/">
-                https://yamabaku-vote-app.appspot.com/
+              <a href="https://covid-19.yamabaku.work/">
+                https://covid-19.yamabaku.work/
               </a>
             </Tab.Pane>
           ),

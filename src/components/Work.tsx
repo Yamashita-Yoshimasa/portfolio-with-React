@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Header, Modal, Tab } from 'semantic-ui-react';
+import { Modal, Tab } from 'semantic-ui-react';
 import { WorkData } from './WorkList';
 
 const Work: FC<{}> = () => {
@@ -25,10 +25,9 @@ const Work: FC<{}> = () => {
                 </li>
               }
             >
-              <Modal.Header>Select a Photo</Modal.Header>
+              <Modal.Header>{item.name}</Modal.Header>
               <Modal.Content>
                 <Modal.Description>
-                  <Header>Default Profile Image</Header>
                   <div className="c-modal -flex">
                     <Tab panes={item.DeviceTab} className="c-modal__item" />
                     <Tab panes={item.IntroTab} className="c-modal__item" />
