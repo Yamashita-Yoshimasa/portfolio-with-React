@@ -1,21 +1,21 @@
 import React, { ReactNode } from 'react';
 import { Tab } from 'semantic-ui-react';
-import LencerTopImage from '../images/lencer_top.png';
-import LencerSPImage from '../images/lencer_sp.png';
-import PortfolioTopImage from '../images/portfolio_top.png';
-import PortfolioSPImage from '../images/portfolio_sp.png';
-import PortfolioPCImage from '../images/portfolio_pc.png';
-import IventTopImage from '../images/yamabaku_top.png';
-import IventSPImage from '../images/yamabaku_sp.png';
-import IventPCImage from '../images/yamabaku_pc.png';
-import TurtleRabbitTopImage from '../images/turtle-vs-rabbit_top.png';
-import TurtleRabbitPCImage from '../images/turtle-vs-rabbit_pc.png';
-import VoteAppTopImage from '../images/Vote_App_top.png';
-import VoteAppSPImage from '../images/Vote_App_sp.png';
-import VoteAppPCImage from '../images/Vote_App_pc.png';
-import COVIDTopImage from '../images/COVID-19-Compensation_top.png';
-import COVIDSPImage from '../images/COVID-19-Compensation_sp.png';
-import COVIDPCImage from '../images/COVID-19-Compensation_pc.png';
+import LencerTopImage from 'images/lencer_top.png';
+import LencerSPImage from 'images/lencer_sp.png';
+import PortfolioTopImage from 'images/portfolio_top.png';
+import PortfolioSPImage from 'images/portfolio_sp.png';
+import PortfolioPCImage from 'images/portfolio_pc.png';
+import IventTopImage from 'images/yamabaku_top.png';
+import IventSPImage from 'images/yamabaku_sp.png';
+import IventPCImage from 'images/yamabaku_pc.png';
+import TurtleRabbitTopImage from 'images/turtle-vs-rabbit_top.png';
+import TurtleRabbitPCImage from 'images/turtle-vs-rabbit_pc.png';
+import VoteAppTopImage from 'images/Vote_App_top.png';
+import VoteAppSPImage from 'images/Vote_App_sp.png';
+import VoteAppPCImage from 'images/Vote_App_pc.png';
+import COVIDTopImage from 'images/COVID-19-Compensation_top.png';
+import COVIDSPImage from 'images/COVID-19-Compensation_sp.png';
+import COVIDPCImage from 'images/COVID-19-Compensation_pc.png';
 
 interface Tab {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
