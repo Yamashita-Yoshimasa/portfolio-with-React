@@ -233,7 +233,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 4,
-      name: 'ウサギとかめ',
+      name: 'ウサギとカメ',
       image: TurtleRabbitTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
