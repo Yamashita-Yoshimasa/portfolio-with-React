@@ -7,6 +7,34 @@
 
   &__item {
     width: 49%;
+
+    & .item {
+      font-size: 1.2rem;
+
+      @include media(pc_big) {
+        font-size: 1.6rem !important;
+      }
+
+      @include media(pc_mid) {
+        font-size: 1.4rem !important;
+      }
+    }
+
+    & .tab {
+      font-size: 1.1rem !important;
+
+      @include media(pc_big) {
+        font-size: 1.6rem !important;
+      }
+
+      @include media(pc_mid) {
+        font-size: 1.4rem !important;
+      }
+
+      @include media(pc_min) {
+        font-size: 1.2rem !important;
+      }
+    }
   }
 
   @include media(tab) {
