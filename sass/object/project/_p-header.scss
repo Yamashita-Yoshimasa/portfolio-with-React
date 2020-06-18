@@ -156,7 +156,7 @@
       }
     }
 
-    & a{
+    & .p-header__anchor{
       color: #505153;
 
       @include media(header){

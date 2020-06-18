@@ -11,7 +11,6 @@ export interface ToggleProps {
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 const Header: FC<ToggleProps> = ({
   NavClass = '',
-  BarClass = '',
   ToggleClass = () => undefined,
 }) => (
   <div className="p-bg" style={{ backgroundImage: `url(${TopImage})` }}>
@@ -26,31 +25,41 @@ const Header: FC<ToggleProps> = ({
               className="p-header__list_item jump_to_top"
               onClick={() => ToggleClass()}
             >
-              <a href="#header">TOP</a>
+              <a className="p-header__anchor" href="#header">
+                TOP
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_about"
               onClick={() => ToggleClass()}
             >
-              <a href="#about">ABOUT ME</a>
+              <a className="p-header__anchor" href="#about">
+                ABOUT ME
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_works"
               onClick={() => ToggleClass()}
             >
-              <a href="#works">WORKS</a>
+              <a className="p-header__anchor" href="#works">
+                WORKS
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_skills"
               onClick={() => ToggleClass()}
             >
-              <a href="#skill">MY SKILLS</a>
+              <a className="p-header__anchor" href="#skill">
+                MY SKILLS
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_contact"
               onClick={() => ToggleClass()}
             >
-              <a href="#contact">CONTACT</a>
+              <a className="p-header__anchor" href="#contact">
+                CONTACT
+              </a>
             </li>
           </ul>
         </nav>
@@ -59,7 +68,7 @@ const Header: FC<ToggleProps> = ({
     <section id="top" className="l-top">
       <div className="p-top">
         <h2 className="p-top__title">
-          Yamashita's <br />
+          Yamashita&apos;s <br />
           Portfolio
         </h2>
         <p className="p-top__text">
