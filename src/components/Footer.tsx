@@ -15,7 +15,7 @@ const Footer: FC<{}> = () => (
         <p className="p-skill__text" />
       </div>
       <p className="p-footer__copy">
-        <small>©︎ 2019 portfolio.yamabaku.work</small>
+        <small>©︎ 2019 react-portfolio.yamabaku.work</small>
       </p>
     </div>
   </footer>
