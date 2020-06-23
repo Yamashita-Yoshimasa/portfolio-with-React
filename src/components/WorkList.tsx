@@ -103,7 +103,8 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                id="tab-image"
+                className="c-modal__image -pc"
                 src={PortfolioPCImage}
                 alt="portfolioのPC画面"
               />
@@ -171,7 +172,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={IventPCImage}
                 alt="イベントサイトのPC画面"
               />
@@ -241,7 +242,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={TurtleRabbitPCImage}
                 alt="作成したゲームのPC画面"
               />
@@ -314,7 +315,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={VoteAppPCImage}
                 alt="作成したアプリのPC画面"
               />
@@ -394,7 +395,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={COVIDPCImage}
                 alt="作成したアプリのPC画面"
               />
