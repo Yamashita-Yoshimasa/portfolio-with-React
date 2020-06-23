@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import ScrollToTop from './containers/ScrollToTop';
 import Header from './containers/Header';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -22,7 +21,6 @@ const App: FC<{}> = () => (
       <Footer />
       <NavBar />
     </div>
-    <ScrollToTop />
   </BrowserRouter>
 );
 export default App;
