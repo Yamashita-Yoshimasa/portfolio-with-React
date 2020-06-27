@@ -192,7 +192,7 @@ input, select {
 }
 
 .l-top {
-  padding: 0 25%;
+  padding: 0 3rem;
   text-align: center;
 }
 
@@ -993,6 +993,7 @@ input, select {
   letter-spacing: -0.01em;
   line-height: 1.08;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 @media (min-width: 767px) {
@@ -1004,6 +1005,7 @@ input, select {
 .p-top__text {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50% 50%;
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.05em;
