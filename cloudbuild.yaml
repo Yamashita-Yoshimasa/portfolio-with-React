@@ -3,7 +3,7 @@ steps:
     args: ['install']
 
   - name: 'gcr.io/cloud-builders/yarn'
-    args: ['lint, '--fix']
+    args: ['lint', 'deploy']
 
   - name: 'gcr.io/cloud-builders/yarn'
     args: ['build']
