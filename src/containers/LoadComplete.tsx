@@ -10,6 +10,5 @@ const StopLoading: () => void = async () => {
 };
 
 export const LoadComplete: () => void = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  window.addEventListener('load', event => StopLoading());
+  window.addEventListener('load', () => StopLoading());
 };
