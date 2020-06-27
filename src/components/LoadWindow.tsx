@@ -1,13 +1,10 @@
 import React, { FC, useEffect, useState } from 'react';
 import { LoadComplete } from 'containers/LoadComplete';
 import LoadingImage from 'images/LoadImage.png';
+import { GetCenterPosition } from 'containers/GetCenterPosition';
 
 const LoadWindow: FC<{}> = () => {
   const [position, setPosition] = useState(0);
-
-  const GetCenterPosition: () => number = () => {
-    return window.innerHeight / 2;
-  };
 
   useEffect(() => {
     const WindowWidth = window.innerWidth;
