@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 
 import TopImage from 'images/top.png';
+import Title from 'components/Title';
 
 export interface ToggleProps {
   NavClass?: string;
   BarClass?: string;
   ToggleClass?: () => void;
 }
+
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 const Header: FC<ToggleProps> = ({
@@ -66,17 +68,7 @@ const Header: FC<ToggleProps> = ({
       </div>
     </header>
     <section id="top" className="l-top">
-      <div className="p-top">
-        <h2 className="p-top__title">
-          Yamashita&apos;s <br />
-          Portfolio
-        </h2>
-        <p className="p-top__text">
-          山下 佳真と申します。
-          <br />
-          ここでは簡単な経歴、作品などを掲載しています。
-        </p>
-      </div>
+      <Title />
     </section>
   </div>
 );
