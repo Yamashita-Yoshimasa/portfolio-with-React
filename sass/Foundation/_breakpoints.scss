@@ -10,6 +10,8 @@ $breakpoints: (
   'header': '(min-width: 811px)',
   'sp1': '(max-width: 425px)',
   'sp-tab': '(min-width: 426px) and (max-width:767px)',
+  'pc_mid': '(min-width: 1440px)',
+  'pc_big': '(min-width: 1920px)',
 );
 
 @mixin media($breakpoint) {

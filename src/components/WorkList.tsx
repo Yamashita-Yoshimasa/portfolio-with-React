@@ -1,21 +1,21 @@
 import React, { ReactNode } from 'react';
 import { Tab } from 'semantic-ui-react';
-import LencerTopImage from '../images/lencer_top.png';
-import LencerSPImage from '../images/lencer_sp.png';
-import PortfolioTopImage from '../images/portfolio_top.png';
-import PortfolioSPImage from '../images/portfolio_sp.png';
-import PortfolioPCImage from '../images/portfolio_pc.png';
-import IventTopImage from '../images/yamabaku_top.png';
-import IventSPImage from '../images/yamabaku_sp.png';
-import IventPCImage from '../images/yamabaku_pc.png';
-import TurtleRabbitTopImage from '../images/turtle-vs-rabbit_top.png';
-import TurtleRabbitPCImage from '../images/turtle-vs-rabbit_pc.png';
-import VoteAppTopImage from '../images/Vote_App_top.png';
-import VoteAppSPImage from '../images/Vote_App_sp.png';
-import VoteAppPCImage from '../images/Vote_App_pc.png';
-import COVIDTopImage from '../images/COVID-19-Compensation_top.png';
-import COVIDSPImage from '../images/COVID-19-Compensation_sp.png';
-import COVIDPCImage from '../images/COVID-19-Compensation_pc.png';
+import LencerTopImage from 'images/lencer_top.png';
+import LencerSPImage from 'images/lencer_sp.png';
+import PortfolioTopImage from 'images/portfolio_top.png';
+import PortfolioSPImage from 'images/portfolio_sp.png';
+import PortfolioPCImage from 'images/portfolio_pc.png';
+import IventTopImage from 'images/yamabaku_top.png';
+import IventSPImage from 'images/yamabaku_sp.png';
+import IventPCImage from 'images/yamabaku_pc.png';
+import TurtleRabbitTopImage from 'images/turtle-vs-rabbit_top.png';
+import TurtleRabbitPCImage from 'images/turtle-vs-rabbit_pc.png';
+import VoteAppTopImage from 'images/Vote_App_top.png';
+import VoteAppSPImage from 'images/Vote_App_sp.png';
+import VoteAppPCImage from 'images/Vote_App_pc.png';
+import COVIDTopImage from 'images/COVID-19-Compensation_top.png';
+import COVIDSPImage from 'images/COVID-19-Compensation_sp.png';
+import COVIDPCImage from 'images/COVID-19-Compensation_pc.png';
 
 interface Tab {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,6 +24,7 @@ interface Tab {
 }
 interface WorkItem {
   id: number;
+  name: string;
   image: string;
   alt: string;
   DeviceTab?: Tab[];
@@ -37,6 +38,7 @@ export const WorkData: WorkList = {
   List: [
     {
       id: 1,
+      name: 'Lencer',
       image: LencerTopImage,
       alt: '担当した案件の画像',
       DeviceTab: [
@@ -78,7 +80,6 @@ export const WorkData: WorkList = {
           menuItem: '工夫箇所',
           render: () => (
             <Tab.Pane>
-              目的 機能概要 工夫箇所 制作期間
               デザインがウィンドウサイズでずれてしまった時は対応方法を確認し、レスポンシブ化しました。
               環境構築でエラーが出たときにその解決方法を調べ、その方法をスクラップボックスにメモし、解決方法を共有しました。
               用意して頂いていた手順書で躓いたり、間違ったりしていた所を報告後追記や修正を行ました。
@@ -93,6 +94,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 2,
+      name: 'Portfolio',
       image: PortfolioTopImage,
       alt: '作成したポートフォリオのトップページ画像',
       DeviceTab: [
@@ -101,7 +103,8 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                id="tab-image"
+                className="c-modal__image -pc"
                 src={PortfolioPCImage}
                 alt="portfolioのPC画面"
               />
@@ -160,6 +163,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 3,
+      name: '現役フリーランスに相談しよう！',
       image: IventTopImage,
       alt: '主催したイベントのホームページ画像',
       DeviceTab: [
@@ -168,7 +172,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={IventPCImage}
                 alt="イベントサイトのPC画面"
               />
@@ -229,6 +233,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 4,
+      name: 'ウサギとカメ',
       image: TurtleRabbitTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -237,7 +242,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={TurtleRabbitPCImage}
                 alt="作成したゲームのPC画面"
               />
@@ -301,6 +306,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 5,
+      name: 'Vote App',
       image: VoteAppTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -309,7 +315,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={VoteAppPCImage}
                 alt="作成したアプリのPC画面"
               />
@@ -380,6 +386,7 @@ export const WorkData: WorkList = {
     },
     {
       id: 6,
+      name: 'COVID-19 Compensation',
       image: COVIDTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
@@ -388,7 +395,7 @@ export const WorkData: WorkList = {
           render: () => (
             <Tab.Pane className="c-modal__imageBox">
               <img
-                className="c-modal__image -sp"
+                className="c-modal__image -pc"
                 src={COVIDPCImage}
                 alt="作成したアプリのPC画面"
               />
@@ -416,8 +423,8 @@ export const WorkData: WorkList = {
               新型コロナウイルスの影響でたくさんの被害が出ており、その際にTwitterなどで日本はマスク二枚だけしか支援していないなど誤った情報が広がっていました。日本もたくさんの支援をしていると多くの人に知ってもらいたいと思いこのWebサイトを作成しました。今後も新しい助成金などを随時追加していく予定です。
               <br />
               GAE:
-              <a href="https://yamabaku-vote-app.appspot.com/">
-                https://yamabaku-vote-app.appspot.com/
+              <a href="https://covid-19.yamabaku.work/">
+                https://covid-19.yamabaku.work/
               </a>
             </Tab.Pane>
           ),

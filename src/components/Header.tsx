@@ -1,17 +1,18 @@
 import React, { FC } from 'react';
 
 import TopImage from 'images/top.png';
+import Title from 'components/Title';
 
 export interface ToggleProps {
   NavClass?: string;
   BarClass?: string;
   ToggleClass?: () => void;
 }
+
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 const Header: FC<ToggleProps> = ({
   NavClass = '',
-  BarClass = '',
   ToggleClass = () => undefined,
 }) => (
   <div className="p-bg" style={{ backgroundImage: `url(${TopImage})` }}>
@@ -26,48 +27,48 @@ const Header: FC<ToggleProps> = ({
               className="p-header__list_item jump_to_top"
               onClick={() => ToggleClass()}
             >
-              <a href="#header">TOP</a>
+              <a className="p-header__anchor" href="#header">
+                TOP
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_about"
               onClick={() => ToggleClass()}
             >
-              <a href="#about">ABOUT ME</a>
+              <a className="p-header__anchor" href="#about">
+                ABOUT ME
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_works"
               onClick={() => ToggleClass()}
             >
-              <a href="#works">WORKS</a>
+              <a className="p-header__anchor" href="#works">
+                WORKS
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_skills"
               onClick={() => ToggleClass()}
             >
-              <a href="#skill">MY SKILLS</a>
+              <a className="p-header__anchor" href="#skill">
+                MY SKILLS
+              </a>
             </li>
             <li
               className="p-header__list_item jump_to_contact"
               onClick={() => ToggleClass()}
             >
-              <a href="#contact">CONTACT</a>
+              <a className="p-header__anchor" href="#contact">
+                CONTACT
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <section id="top" className="l-top">
-      <div className="p-top">
-        <h2 className="p-top__title">
-          Yamashita's <br />
-          Portfolio
-        </h2>
-        <p className="p-top__text">
-          山下 佳真と申します。
-          <br />
-          ここでは簡単な経歴、作品などを掲載しています。
-        </p>
-      </div>
+      <Title />
     </section>
   </div>
 );

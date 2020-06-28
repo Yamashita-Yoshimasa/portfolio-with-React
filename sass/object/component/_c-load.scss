@@ -1,0 +1,39 @@
+.c-load {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 10000;
+
+  &.-is-active {
+    background-color: #05182e;
+    display: block;
+  }
+
+  &__image {
+    animation:3s linear infinite rotation1;
+    height: 200px;
+    width: 200px;
+
+    @include media(pc_min) {
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+
+    &.-view {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
