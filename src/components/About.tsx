@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
-import AvatarImage from '../images/avatar.png';
+import QiitaImage from 'images/Qiita.png';
+import GitHubImage from 'images/GitHub.png';
+import AvatarImage from 'images/avatar.png';
 
 const About: FC<{}> = () => (
   <section id="about" className="l-about">
@@ -22,7 +24,7 @@ const About: FC<{}> = () => (
           <ul className="p-about__list">
             <li className="p-about__item">名前:山下 佳真</li>
             <br />
-            <li className="p-about__item">年齢:24歳(1995/04/20)</li>
+            <li className="p-about__item">年齢:25歳</li>
             <br />
             <li className="p-about__item">
               職業:自動車関係(メーターのデバッグ業務)
@@ -44,9 +46,7 @@ const About: FC<{}> = () => (
               よろしくお願い致します。
             </p>
             <p className="p-about__text">
-              私は現在Webデザインの学習を初めて半年ほどになります(2019/06から学習開始)。1月に初案件を獲得し、現在は初案件を頂いた企業様から業務委託を受けています。また、定期的にネットでもくもく会という勉強会を開催して、私の案件をとった経験であったり、勉強法などを共有しています。勉強で役に立った書籍などを
-              <a href="https://qiita.com/yama-baku">Qiita</a>
-              にまとめています。さらに、Twitterで知り合ったフリーランスの方に講師として参加して頂いた現役フリーランスに相談しよう！というイベントも企画、開催しました。
+              私は現在Web制作、web開発の学習を初めて1年ほどになります(2019/06から学習開始)。そして、2020年1月に初案件を獲得しました。また、「ネットでもくもく会」という勉強会を開催して、私の案件をとった経験や、勉強法などを共有しています。さらに、Twitterで知り合ったフリーランスの方に講師として参加して頂いた「現役フリーランスに相談しよう！」というイベントも企画、開催しました。
             </p>
             <p className="p-about__text">
               勉強をし始めた頃はサイト制作なんてできるのかと思っていましたが、コツコツと続けた結果案件を獲得し、Twitterいろいろな人と出会いイベントを開催するようになりました。また、このポートフォリオサイトはGoogle
@@ -54,6 +54,31 @@ const About: FC<{}> = () => (
               Engineを用いて公開しています。半年前の自分では考えられなかった技術を今は使えるようになりました。すべて独学でWebサイトのコーディングからクラウドサービスへのデプロイ(https通信に対応させています)まで行えたので、自走力はかなりあると思っています。
             </p>
           </div>
+        </div>
+      </div>
+      <div className="p-about__icon">
+        <div className="p-about__fonts">
+          <a href="https://twitter.com/Tapi_tapirus">
+            <i className="fab fa-twitter-square p-about__twitter" />
+          </a>
+          <p className="p-skill__text" />
+        </div>
+        <div className="p-about__qiita">
+          <a href="https://qiita.com/yama-baku" className="p-about__link">
+            <img className="p-about__image" src={QiitaImage} alt="Qiitaロゴ" />
+          </a>
+        </div>
+        <div className="p-about__github">
+          <a
+            href="https://github.com/Yamashita-Yoshimasa"
+            className="p-about__link"
+          >
+            <img
+              className="p-about__image"
+              src={GitHubImage}
+              alt="GitHubロゴ"
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -156,5 +156,23 @@
     }
   }
 
+  &__icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  &__twitter{
+    color: #00aced ;
+    font-size: 6.4rem;
+  }
+
+  &__image {
+    height: 6.4rem;
+    margin-left: 1rem;
+    width: 6.4rem;
+
+  }
+
 }
 
