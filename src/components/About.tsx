@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
-import AvatarImage from '../images/avatar.png';
+import QiitaImage from 'images/Qiita.png';
+import GitHubImage from 'images/GitHub.png';
+import AvatarImage from 'images/avatar.png';
 
 const About: FC<{}> = () => (
   <section id="about" className="l-about">
@@ -22,7 +24,7 @@ const About: FC<{}> = () => (
           <ul className="p-about__list">
             <li className="p-about__item">名前:山下 佳真</li>
             <br />
-            <li className="p-about__item">年齢:24歳(1995/04/20)</li>
+            <li className="p-about__item">年齢:25歳</li>
             <br />
             <li className="p-about__item">
               職業:自動車関係(メーターのデバッグ業務)
@@ -47,6 +49,31 @@ const About: FC<{}> = () => (
               私の一番やりたい事は人の役に立つ事です。それを考えた時思いついたのがWeb開発でした。なぜWeb開発なのかと言うと、Web開発はスピード感を持って多くの人に便利で役に立つものを届けることができると思ったからです。そして、そこから独学でWeb開発の学習をはじめました。HTML/CSSから勉強をはじめ、今ではReactでWebページ作成、GAEでデプロイ、Web上に公開までできるようになりました。基礎的な事はできるようになったと思い、本格的に転職を考えこのポートフォリオサイトを作成しました。以下の作品欄に私が作成したものを載せていますのでご覧頂ければ幸いです。また、Qiitaには私が勉強したこと、GitHubには私が書いたプログラムを載せています。そちらもよろしくお願いします。Qiita、GItHubは以下のリンクから飛ぶことができます
             </p>
           </div>
+        </div>
+      </div>
+      <div className="p-about__icon">
+        <div className="p-about__fonts">
+          <a href="https://twitter.com/Tapi_tapirus">
+            <i className="fab fa-twitter-square p-about__twitter" />
+          </a>
+          <p className="p-skill__text" />
+        </div>
+        <div className="p-about__qiita">
+          <a href="https://qiita.com/yama-baku" className="p-about__link">
+            <img className="p-about__image" src={QiitaImage} alt="Qiitaロゴ" />
+          </a>
+        </div>
+        <div className="p-about__github">
+          <a
+            href="https://github.com/Yamashita-Yoshimasa"
+            className="p-about__link"
+          >
+            <img
+              className="p-about__image"
+              src={GitHubImage}
+              alt="GitHubロゴ"
+            />
+          </a>
         </div>
       </div>
     </div>
