@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { ToggleClass } from '../actions/toggle';
-import NavBar from '../components/Navigation';
+import NavBar from '../components/Home/Navigation';
 import { ToggleState } from '../reducer';
 
 interface StateProps {

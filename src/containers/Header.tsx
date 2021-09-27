@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { ToggleClass } from '../actions/toggle';
-import Header from '../components/Header';
+import Header from '../components/Home/Header';
 import { ToggleState } from '../reducer';
 
 interface StateProps {

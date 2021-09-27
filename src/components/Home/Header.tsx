@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import TopImage from 'images/top.png';
-import Title from 'components/Title';
+import Title from 'components/Home/Title';
 
 export interface ToggleProps {
   NavClass?: string;
@@ -61,6 +61,14 @@ const Header: FC<ToggleProps> = ({
             >
               <a className="p-header__anchor" href="#contact">
                 CONTACT
+              </a>
+            </li>
+            <li
+              className="p-header__list_item jump_to_contact"
+              onClick={() => ToggleClass()}
+            >
+              <a className="p-header__anchor" href="/Practice">
+                PRACTCE
               </a>
             </li>
           </ul>
