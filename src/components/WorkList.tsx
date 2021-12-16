@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import React, { ReactNode } from 'react';
 import { Tab } from 'semantic-ui-react';
 import LencerTopImage from 'images/lencer_top.png';
@@ -10,12 +11,12 @@ import IventSPImage from 'images/yamabaku_sp.png';
 import IventPCImage from 'images/yamabaku_pc.png';
 import TurtleRabbitTopImage from 'images/turtle-vs-rabbit_top.png';
 import TurtleRabbitPCImage from 'images/turtle-vs-rabbit_pc.png';
-import VoteAppTopImage from 'images/Vote_App_top.png';
-import VoteAppSPImage from 'images/Vote_App_sp.png';
-import VoteAppPCImage from 'images/Vote_App_pc.png';
 import COVIDTopImage from 'images/COVID-19-Compensation_top.png';
 import COVIDSPImage from 'images/COVID-19-Compensation_sp.png';
 import COVIDPCImage from 'images/COVID-19-Compensation_pc.png';
+import GPUTopImage from 'images/GPU_top.png';
+import GPUSPImage from 'images/GPU_sp.png';
+import GPUPCImage from 'images/GPU_top.png';
 
 interface Tab {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -306,8 +307,8 @@ export const WorkData: WorkList = {
     },
     {
       id: 5,
-      name: 'Vote App',
-      image: VoteAppTopImage,
+      name: 'Gpu Price Checker',
+      image: GPUTopImage,
       alt: '作成したwebアプリの画像',
       DeviceTab: [
         {
@@ -316,7 +317,7 @@ export const WorkData: WorkList = {
             <Tab.Pane className="c-modal__imageBox">
               <img
                 className="c-modal__image -pc"
-                src={VoteAppPCImage}
+                src={GPUPCImage}
                 alt="作成したアプリのPC画面"
               />
             </Tab.Pane>
@@ -328,7 +329,7 @@ export const WorkData: WorkList = {
             <Tab.Pane className="c-modal__imageBox">
               <img
                 className="c-modal__image -sp"
-                src={VoteAppSPImage}
+                src={GPUSPImage}
                 alt="作成したアプリのSP画面"
               />
             </Tab.Pane>
@@ -340,16 +341,11 @@ export const WorkData: WorkList = {
           menuItem: '目的',
           render: () => (
             <Tab.Pane>
-              自分の選挙区を確認するWebアプリです。若者の投票率を上げることで若者が住みやすい社会(結婚や子育てがしやすい社会)にしたいと思ったことから作りました。若者の投票率を上げることで政治家の方が若者の投票率を無視できなくります。そうすると政治家の方は若者向けの政策を作らざるを得なくなります。そのようにして若者向けの政策を多く作ってもらい若者が住みやすい社会を作りたいです。
+              マイニング用GPUの価格を確認するためのアプリを作成しました。
               <br />
-              AWS:
-              <a href="https://master.d1i2pncgsh43i8.amplifyapp.com/">
-                https://master.d1i2pncgsh43i8.amplifyapp.com/
-              </a>
-              <br />
-              GAE:
-              <a href="https://yamabaku-vote-app.appspot.com/">
-                https://yamabaku-vote-app.appspot.com/
+              Azure:
+              <a href="https://gpuscraping.azurewebsites.net/">
+                https://gpuscraping.azurewebsites.net/
               </a>
             </Tab.Pane>
           ),
@@ -358,13 +354,11 @@ export const WorkData: WorkList = {
           menuItem: '機能概要',
           render: () => (
             <Tab.Pane>
-              ・選挙区確認アプリ
+              ・マイニング用GPUの価格を確認するためのアプリ
               <br />
-              ・React,firebaseを使用
+              ・Reactを使用し、Azureにデプロイ
               <br />
-              ・現在は三重県と愛知県のみ対応
-              <br />
-              将来的には選挙区の立候補者一覧や政策を掲載、その立候補者の政策達成率などを載せていきたいです。また、若者が選挙に興味を持つような工夫も盛り込んでいきたいと思っています。例えば、選挙中に選挙に行ったら割引しますというようなキャンペーンを行っている企業があります。その企業に協力して頂き、この選挙に行くとこのアプリからクーポンをダウンロードできるようにするなどして選挙に行くことでお得なことがあるということを若者に広めて行きたいです。そのためにはクーポンを掲載してくださる企業側のメリットが必要ですが、現在はまでどのようにメリットを提供できるか検討しています。
+              検索バーにGPUの名前を入力することで在庫のあるGPUの価格を確認することができます。
             </Tab.Pane>
           ),
         },
@@ -372,15 +366,14 @@ export const WorkData: WorkList = {
           menuItem: '工夫箇所',
           render: () => (
             <Tab.Pane>
-              URLに日本語を使用しているのですが、AWSのリダイレクト設定では日本語をURLに含めるとリダイレクトに失敗しました。そこで、日本語の部分をURLエンコーダーで変換し、その値をリダイレクト設定に用いることでその問題を解決しました。
+              商品購入ページのURLは商品IDを用いているため、スクレイピングでIDを取得し、
+              URLを書き換えることで気になった商品の購入ページに直接アクセスできるようにしました。
             </Tab.Pane>
           ),
         },
         {
           menuItem: '制作期間',
-          render: () => (
-            <Tab.Pane>12時間(コーディングからデプロイまで)</Tab.Pane>
-          ),
+          render: () => <Tab.Pane>2週間</Tab.Pane>,
         },
       ],
     },

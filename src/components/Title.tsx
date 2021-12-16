@@ -31,13 +31,6 @@ const Title: FC<{}> = () => {
         Yamashita&apos;s <br />
         Portfolio
       </h2>
-      <p className="p-top__text">
-        山下 佳真と申します。
-        <br />
-        このサイトには簡単な経歴、作品などを
-        <br />
-        掲載しています。
-      </p>
     </div>
   );
 };
